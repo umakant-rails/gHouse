@@ -40,5 +40,5 @@ production:
   database: ghouse_prd
   pool: 5
   timeout: 5000
-  username: postgres
+  username: 
   password: 
