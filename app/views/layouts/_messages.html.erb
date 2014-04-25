@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+  <div class="col-xm-8 col-sm-8 col-md-8 col-lg-8">
+    <div id="alert_msg" >
+      <% if notice.present? %>
+        <% if notice.index('success').present? %>
+          <p class="alert alert-success">
+            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button><%= notice %>
+          </p>
+        <% else %>
+          <p class="alert notice alert-info <%= "hide" if notice.blank? %>">
+            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button><%= notice %>
+          </p>
+        <% end %>
+      <% end %>
+      <% alert = alert.blank? ? flash[:warning] : alert %> 
+      <% if (!alert.blank?) %>
+        <p class="alert alert-warning">
+          <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button><%= alert %>
+        </p>
+      <% end %>
+      <%is_error_exist = resource.errors.present? rescue nil %>
+      <% if (is_error_exist.present?) ||  flash[:error].present?%>
+        <p class="alert alert-danger">
+          <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+          <% is_error_exist  && resource.errors.messages.each do | key, values | %>
+            <% values.each do | value |%>
+              <%= key.to_s + " " + value %><br/>
+            <% end %>
+          <% end %>
+          <%= flash[:error] %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+</div>

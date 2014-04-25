@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gHouse</title>
+    <%= stylesheet_link_tag "application", media: "all",
+      "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render :partial => "layouts/user_nav_bar"%>
+    <div class="container">
+      <%= render :partial => "layouts/messages" %>
+      <%= yield %>
+    </div>
+    <%= render :partial => "layouts/footer" %>
+  </body>
+</html>

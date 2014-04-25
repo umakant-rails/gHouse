@@ -1,0 +1,61 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="signin-block">
+    <div class="row-fluid blk-body medium-block">
+      <div class="row">
+        <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row form-txt-header">
+            YOUR LOGIN DETAILS
+          </div>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-xm-10 col-sm-10 col-md-6 col-lg-10">
+          <div class="label">Email</div>
+          <br/>
+          <%= f.email_field :email, autofocus: true, class: 'form-control mandatory'%>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-xm-10 col-sm-10 col-md-10 col-lg-10">
+          <div class="label">Password</div>
+          <br/>
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control mandatory' %>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-xm-10 col-sm-10 col-md-6 col-lg-10">
+          <% if devise_mapping.rememberable? -%>
+            <div><%= f.check_box :remember_me, :class => "pull-left", :style => "width:3% !important;"  %> &nbsp;&nbsp;&nbsp;<%= f.label :remember_me %></div>
+          <% end %>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="clear"></div>
+      <div class="row">
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <button type="submit" name="commit" class="btn btn-primary btn-block create_sbmt_btn">
+            <span class="glyphicon glyphicon-lock"></span>&nbsp;&nbsp;&nbsp;Sign in</a>
+          </button>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="clear"></div>
+      <div class="row">
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+            <%= link_to "Forgot your password?", new_password_path(resource_name), style: "color:red;text-decoration: underline !important;" %><br />
+          <% end -%>
+        </div>
+      </div>
+    </div >
+  </div>
+  <div class="clear"></div>
+  <div class="clear"></div>
+<% end %>

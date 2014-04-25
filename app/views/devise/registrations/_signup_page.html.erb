@@ -1,0 +1,123 @@
+<div class="msg-for-login">
+  <font color="#FF0000">
+    <small>
+      <strong>NOTE:</strong>
+    </small>
+  </font>
+  If you already have an account with us, please login at the
+  <a href="#"><u>login page</u></a>.
+</div>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="signin-block">
+    <div class="row-fluid blk-body">
+      <div class="row">
+        <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="form-txt-header">
+            YOUR PERSONAL DETAILS
+          </div>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">User Type</div>
+          <br/>
+          <%= f.text_field :first_name, value: params[:account_type].capitalize, disabled: true, autofocus: true, class: 'form-control'%>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">First Name</div>
+          <br/>
+          <%= f.text_field :first_name, autofocus: true, class: 'form-control mandatory'%>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">Last Name</div>
+          <br/>
+          <%= f.text_field :last_name, autofocus: true, class: 'form-control mandatory'%>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">Email</div>
+          <br/>
+          <%= f.email_field :email, autofocus: true, class: 'form-control mandatory'%>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">Password</div>
+          <br/>
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control mandatory' %>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="label">Password Confirmation</div>
+          <br/>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control mandatory' %>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+          <% if devise_mapping.rememberable? -%>
+            <%= f.check_box :remember_me, :class => "pull-left", :style => "width:3% !important;" %> <%= f.label :remember_me %>
+          <% end %>
+        </div>
+        <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+      </div>
+      <br/>
+    </div >
+  </div>
+  <% if user_type == 'client' %>
+    <div class="signin-block">
+      <div class="row-fluid blk-body">
+        <div class="row">
+          
+          <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-txt-header">
+              COMPANY DETAILS
+            </div>
+          </div>
+          <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+        </div>
+        <div class="row">
+          
+          <div class="col-xm-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="label">Company Name</div>
+            <br/>
+            <%= text_field_tag :company_name %>
+          </div>
+          <div class="col-xm-2 col-sm-2 col-md-2 col-lg-2"></div>
+        </div>
+        <br/>
+      </div >
+    </div>
+  <% end %>
+  <div class="clear"></div>
+  <br/>
+  <div class="row ">
+    <div class="col-xm-4 col-sm-4 col-md-4 col-lg-4">
+      <%= f.submit "CREATE ACCOUNT", class: "btn btn-primary btn-lg btn-block create_sbmt_btn" %>
+    </div>
+  </div>
+<% end %>

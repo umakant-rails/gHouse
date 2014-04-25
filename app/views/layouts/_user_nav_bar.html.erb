@@ -1,0 +1,27 @@
+<nav role="navigation" class="navbar navbar-inverse custom-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header user-navbar-header">
+      <button data-target="#bs-example-navbar-collapse-9" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="<%= root_path%>">
+        <img width="199" height="48" title="Real Estate" class="ghouse_img" alt="Real Estate" src="../assets/ghouse.png"/>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav pull-right user-layout-link-block">
+        <% if !(params[:controller] == "users/registrations" && params[:action] == "new") %>
+          <li><a href="<%= new_user_registration_path %>">Create an Account</a></li>
+        <% end %>  
+        <% if !(params[:controller] == "users/sessions" && params[:action] == "new") %>
+          <li><a href="<%= new_user_session_path %>">Log in</a></li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
