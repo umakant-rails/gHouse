@@ -597,7 +597,7 @@ display:none;}
 #bodyContent .box_wrapper_title{}
 /* *********************************   HEADER_TOP_MENU    **************************************************** */
 .boxes_menu{ position:absolute; left:0; top:157px; width:100%; border-top:1px solid #4e5356}
-.menu{padding:7px 0px 8px 0px;margin-top:0px;overflow:hidden;}
+.menu{padding:7px 0px -1px 0px;margin-top:0px;overflow:hidden;}
 .menu ul{padding: 0px 0px 0px 0px;list-style:none; margin:0px 0px 0 0px; width:auto; display:inline-block; }
 .menu li{float:left;padding:0 25px 0 25px;margin:0 0px 0 0px; background: url("../assets/bg_menu.gif") no-repeat  0px 16px;}
 .menu li a{font-size:15px; color:#f8f8f8; font-weight:100;font-family: 'Open Sans', sans-serif;

@@ -30,6 +30,8 @@ gem 'unicorn'
 gem 'kaminari'
 gem 'rename'
 gem 'protected_attributes'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'cancan'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

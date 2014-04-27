@@ -1,0 +1,96 @@
+<nav role="navigation" class="navbar navbar-inverse custom-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="row_1">
+      <div class="container_12" id="" style="height: auto;">
+        <div class="clear"></div>
+        <div class="clear"></div>
+        <div class="row">
+          <div class="col-xm-3 col-sm-3 col-md-3 col-lg-3">
+            <a href="<%= root_path %>">
+              <img width="225" height="55" title="Real Estate" class="ghouse_img" alt="Real Estate" src="../assets/ghouse2.png">
+            </a>
+          </div>
+          <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9">
+            <ul class="user_status-tab pull-right">
+              <li>
+                <a href="<%= destroy_user_session_path %>">
+                  Log out
+                </a>
+              </li>
+              <li>
+                <a href="<%= new_user_registration_path %>">
+                  <div class="button-t">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span><%= current_user.first_name.blank? ? "User".capitalize : current_user.first_name.capitalize %></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xm-3 col-sm-3 col-md-3 col-lg-3">
+            <div class= "row portfolio-block">
+              <div class="portfolio-header row-fluid">
+                <span class="pull left header-txt">Selected Portfolios</span>
+                <span id="up_down_arrow" class="pull-right up-arrow" href="#"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9 custom-user-menu">
+            <div class="menu custom-menu">
+              <ul>
+                <li class="act first">
+                  <a href="#"><i class="icon-home"></i>
+                    Home
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="icon-bullhorn"></i>
+                    What's New?
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    Featured
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    Top sellers
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="icon-certificate"></i>
+                    Specials
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    Brands
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#">
+                    <i class="icon-edit"></i>
+                    Reviews
+                  </a>
+                </li>
+                <li class="last">
+                  <a href="#">
+                    <i class="icon-map-marker"></i>
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>

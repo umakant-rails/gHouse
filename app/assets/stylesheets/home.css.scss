@@ -1,9 +1,151 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.custom-container{
+  min-height: 500px;
+}
 
 .user-img{
   border: 1px solid #D3D3D3;
   height: 100px;
   width: 100px;
+}
+.user_status-tab{
+  li{
+    background: none repeat scroll 0 0 #F07746;
+    float: right;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 4px 12px;
+    a{color:white;}
+    &:a:hover{color:white;}
+  }
+}
+
+.portfolio-block{
+  background-color: #FFFFFF; /*#EEEEEE;*/
+  min-height: 111px !important;
+  width: 240px;
+  .portfolio-header{
+    text-align:center;
+    background-color:#757374;
+    min-height:20px;
+    padding:8px 0px;
+    font-size:16px;
+    color:white;
+    .header-txt{
+      margin-left: -30px !important;
+    }
+  }
+}
+
+.down-arrow{
+  background: url("../assets/imgIco.png") repeat scroll -6px -468px rgba(0, 0, 0, 0);
+  height: 25px;
+  width: 20px;
+}
+
+.up-arrow{
+  background: url("../assets/imgIco.png") repeat scroll -6px -427px rgba(0, 0, 0, 0);
+  height: 25px;
+  width: 20px;
+}
+
+.custom-user-menu {
+  ul{
+    margin-top: 60px !important;
+    li{
+      padding: 0px 18px !important;
+      a{
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.portfolio_div{
+  margin-left: -16px;
+}
+
+.cross-sign{
+  margin-right: 5px;
+  margin-top: -3px;
+  cursor: pointer;
+}
+
+.portfolio_details{
+  border-left: 2px solid #BEBFBD;
+  border-right: 2px solid #BEBFBD;
+  border-bottom: 2px solid #BEBFBD;
+  margin-top: -21px;
+  min-height: 300px;
+  background-color: #FFFFFF;
+  .portfolio_list{
+    /*border-right: 1px solid #808080;*/
+    min-height: 300px;
+    ul{
+      margin-top: 5px;
+      width: 170px;
+      border-right: 1px solid #BEBFBD;
+      min-height: 298px;
+      li{
+        /*border-bottom: 1px solid #808080;
+        margin: 0 -16px 0 0;
+        min-height: 30px;
+        padding: 12px 30px;*/
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+}
+
+li.heading{
+  font-weight: bold;
+  margin: 0px 0px 0px 10px;
+  padding-left: 10px !important;
+ 
+}
+li.head-child-txt{
+  border-bottom: 1px dotted gray;
+  margin: 0px 0px 0px 20px ;
+  color: #4F9ACC;
+  cursor: pointer;
+}
+
+li.head-child-txt.selected{
+  border-top:1px solid #BEBFBD;
+  border-left:1px solid #BEBFBD;
+  border-bottom:1px dotted #BEBFBD;
+  border-right:none;
+  width: 150px;
+  padding-left: 10px;
+  background-color:white;
+  color: #4F9ACC;
+  cursor: pointer;
+}
+.properties_by_categories{
+  border: 1px solid #BEBFBD;
+  border-left: 0px;
+  margin: 5px 5px 5px -70px;
+  padding: 5px;
+  width:815px;
+  min-height: 298px;
+}
+
+#prtf_cross_sign{
+  color: #4F9ACC;
+  padding: 5px 0 0 7px;
+  cursor: pointer;
+}
+
+#prtf_cross_txt{
+  color: #4F9ACC;
+  cursor: pointer;
+}
+
+#title_txt{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px 5px 20px;
 }

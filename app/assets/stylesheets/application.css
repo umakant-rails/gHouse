@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  *= require bootstrap
  *= require custom-devise
  *= require ghouse-stylesheet
@@ -17,5 +16,6 @@
  *= require ghouse-list
  *= require ghouse-list-box
  *= require ghouse-buttons
+ *= require_tree .
 */
 
