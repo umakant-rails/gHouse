@@ -15,6 +15,8 @@ $(document).ready ->
 
   $(document).on "click", "#prtf_cross_sign, #prtf_cross_txt", ->
     $("#portfolio_division").hide();
+    $("#up_down_arrow").addClass('up-arrow');
+    $("#up_down_arrow").removeClass('down-arrow');
 
   $(document).on "mouseover", ".head-child-txt", ->
     $(".head-child-txt").each ->
