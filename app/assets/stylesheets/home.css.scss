@@ -1,4 +1,4 @@
-// Place all the styles related to the home controller here.
+  // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .custom-container{
@@ -24,8 +24,8 @@
 
 .portfolio-block{
   background-color: #FFFFFF; /*#EEEEEE;*/
-  min-height: 111px !important;
-  width: 240px;
+  min-height: 135px !important;
+  width: 275px;
   .portfolio-header{
     text-align:center;
     background-color:#757374;
@@ -77,7 +77,8 @@
   border-left: 2px solid #BEBFBD;
   border-right: 2px solid #BEBFBD;
   border-bottom: 2px solid #BEBFBD;
-  margin-top: -21px;
+  margin-top: -35px;
+  margin-left: 35px;
   min-height: 300px;
   background-color: #FFFFFF;
   .portfolio_list{
@@ -127,10 +128,9 @@ li.head-child-txt.selected{
 .properties_by_categories{
   border: 1px solid #BEBFBD;
   border-left: 0px;
-  margin: 5px 5px 5px -70px;
+  margin: 5px 5px 5px -22px;
   padding: 5px;
-  width:815px;
-  min-height: 298px;
+  min-height: 299px;
 }
 
 #prtf_cross_sign{

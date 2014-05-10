@@ -1,59 +1,7 @@
-<nav role="navigation" class="navbar navbar-inverse custom-navbar">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="row_1">
-     <div class="container_12" id="header">
-      <div class="grid_12">
-        <div class="boxes_menu">
-          <div class="menu">
-            <ul>
-              <li class="act first">
-                <a href="#"><i class="icon-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  <i class="icon-bullhorn"></i>
-                  What's New?
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  Featured
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  Top sellers
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  <i class="icon-certificate"></i>
-                  Specials
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  Brands
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  <i class="icon-edit"></i>
-                  Reviews
-                </a>
-              </li>
-              <li class="last">
-                <a href="#">
-                  <i class="icon-map-marker"></i>
-                  Contacts
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<nav role="navigation" class="navbar navbar-default navbar-inverse custom-navbar">
+  <div class="container-fluid"  style="height:190px !important;">
+    <div class="navbar-collapse collapse">
+      <div class="row menu-row">
         <div class="box_header_user_menu">
           <ul class="user_menu">
             <li class="first">
@@ -84,27 +32,82 @@
             </li>
           </ul>
         </div>
-        <div class="box_header_cart destination">
-          <a href="#" class="cart_l">
-            <i class="icon-shopping-cart"></i>
-            <label>My Cart:</label>
-            <span>
-              <span>Now in your cart </span><strong>0</strong> items
-            </span>
-          </a>
-        </div>
-        <div class="search" id="box_search">
-          <form method="get" action="#" name="quick_find">
-            <div class="input-width ">
-              <input type="text" onfocus="if(this.value =='Site Search' ) this.value=''" onblur="if(this.value=='') this.value='Site Search'" class="go fl_left" maxlength="300" size="10" value="Site Search" name="keywords"><input type="hidden" value="n4iih1ds85tfnd9keqe9jgdq67" name="osCsid">
+        <div class="logo_search_box_div">
+          <div class="row-fluid">
+            <div class="col-xm-3 col-sm-3 col-md-3 col-lg-3">
+              <div class="navbar-header">
+                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="<%= root_path %>"><img width="225" height="55" title="Real Estate" class="ghouse_img navbar-brand" alt="Real Estate" src="../assets/ghouse2.png"></a>
+              </div>
             </div>
-            <button type="submit" id="tdb1" class="cstm_search_btn" role="button"><span class="ui-button-text">Search</span></button><script type="text/javascript">$("#tdb1").button().addClass("ui-priority-secondary").parent().removeClass("tdbLink");</script>
-            <label class="fl_left">Search</label>
-          </form>
+            <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9">
+              <div class="box_header_cart destination">
+                <a href="#" class="cart_l">
+                  <span class="glyphicon glyphicon-shopping-cart" style="margin-top:3px;"></span>
+                  <label>My Cart:</label>
+                  <span>
+                    <span>Now in your cart </span><strong>0</strong> items
+                  </span>
+                </a>
+              </div>
+              <div class="search-box-div">
+                <input type="text" name="search_txt" class="search_box_input" placeholder="Search" />
+                <i class="glyphicon glyphicon-search search-btn"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="<%= root_path %>"><img width="225" height="55" title="Real Estate" class="ghouse_img" alt="Real Estate" src="../assets/ghouse2.png"></a>
+        <div class="boxes_menu">
+        <div class="menu">
+          <ul>
+            <li class="act first">
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                What's New?
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                Featured
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                Top sellers
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                Specials
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                Brands
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                Reviews
+              </a>
+            </li>
+            <li class="last">
+              <a href="#">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    </div>
-  </div><!-- /.container-fluid -->
+  </div>
 </nav>

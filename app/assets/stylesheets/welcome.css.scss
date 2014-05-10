@@ -1,3 +1,115 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.custom-user_menu{
+  list-style: none outside none;
+  margin: 0;
+  padding: 4px 0 0 1px;
+  position: absolute;
+  top: 9px;
+}
+
+.box_header_user_menu			{
+  padding: 23px 0px;
+  margin: 0px 0px 12px 0px;
+  float:left;
+  width:100%; overflow:hidden;
+  height:46px;
+  border-bottom:1px solid #4e5356;
+}
+.user_menu {
+  padding:4px 0px 0px 1px;
+  margin:0px 0 0px 0px;
+  list-style:none; position:absolute;top:9px;
+}
+.user_menu li:first-child a	{
+  padding-left:0;
+  margin:0px;
+}
+.user_menu li{
+  float:left;
+  display:inline-block;
+  white-space:nowrap;
+}
+.user_menu li:first-child{
+  background:none;
+}
+.user_menu li a{
+  color:#b2acac;
+  font-size:13px;
+  font-weight:100;
+  font-family: 'Open Sans', sans-serif;
+  display:inline-block; 
+  text-decoration:none; 
+  width:100%;
+  padding: 0px 0px 0px 0px;
+  margin:0px 0 0px 31px;
+  text-shadow: 0px 0px 1px #b2acac;
+  letter-spacing:.01em;
+}
+.user_menu li b{
+  color:#f8f8f8;
+  display:inline-block;
+  padding: 0px;
+}
+.navbar-brand{
+  min-height: 80px;
+}
+
+.search-btn {
+  margin-left: -25px;
+  padding: 6px 5px;
+}
+
+.search-box-div{
+  margin-top: 20px;
+  float: right;
+}
+
+.search_box_input{
+  background-color: #FFFFFF !important;
+  border: none !important;
+  height: 26px !important;
+  width: 230px !important;
+}
+
+.box_header_cart{
+  top:84px; right:0px;z-index:9;
+  background:#f36d50;  /*url("../assets/header_cart.png") no-repeat  0px 0px; */
+  padding:8px 13px 9px 17px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing:.06em;
+  float:right;
+  margin-top:15px;
+  margin-left:17px;
+}
+
+.logo_search_box_div{
+  min-height: 160px;
+  padding: 70px 0; 
+}
+
+.custom-container{
+  width: 94%;
+  margin: 0 6%;
+  padding: 1% 2%;
+}
+
+.boxes_menu{
+  #position:absolute;
+  #top:135px;
+  #border-top:1px solid #4e5356;
+  border-top: 1px solid #4E5356;
+  float: left;
+  height: 50px;
+  margin: 0 0 12px;
+  overflow: hidden;
+  padding: 8px 0;
+  width: 100%;
+}
+.menu-row{
+  #margin: 0px 75px !important;
+  width: 90%;
+  margin: 0 6%;
+}

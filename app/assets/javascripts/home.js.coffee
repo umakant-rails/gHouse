@@ -4,6 +4,7 @@
 $(document).ready ->
   $(document).on "mouseover", "#up_down_arrow", ->
     is_up_arrow = $(this).hasClass('up-arrow');
+    $("#message_div").hide();
     if is_up_arrow
       $(this).removeClass('up-arrow');
       $(this).addClass('down-arrow');
