@@ -15,11 +15,11 @@
   margin: 0px 0px 12px 0px;
   float:left;
   width:100%; overflow:hidden;
-  height:46px;
+  height:52px;
   border-bottom:1px solid #4e5356;
 }
 .user_menu {
-  padding:4px 0px 0px 1px;
+  padding:10px 0px 0px 1px;
   margin:0px 0 0px 0px;
   list-style:none; position:absolute;top:9px;
 }
@@ -86,14 +86,15 @@
 }
 
 .logo_search_box_div{
-  min-height: 160px;
-  padding: 70px 0; 
+  min-height: 170px;
+  padding: 75px 0; 
 }
 
 .custom-container{
-  width: 94%;
-  margin: 0 6%;
-  padding: 1% 2%;
+  #width: 94%;
+  #margin: 0 6%;  
+  #padding: 1% 2%;
+  padding: 0 30px !important;
 }
 
 .boxes_menu{
@@ -111,5 +112,9 @@
 .menu-row{
   #margin: 0px 75px !important;
   width: 90%;
-  margin: 0 6%;
+  margin: 0 5%;
+}
+
+.property-row{
+  width: 100%;
 }

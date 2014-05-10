@@ -118,7 +118,6 @@ ul#sub_categories li.wrapper_prods{float:left;margin: 10px 0px 10px 20px; width:
 .contentContainer.page_un .prods_content.prods_table{}
 ul#sub_categories li.wrapper_prods .prods_padd{ margin:10px 0 10px 0; border:0px solid #eee;}
 .name_padd{padding:5px 0px 4px 0px;display:block;}
-.prods_padd{border-top:0px solid #e5e5e5; margin-top:0px; text-align:left;}
 .name_padd{border-top:0px solid #e5e5e5; margin-top:0px; padding:10px 19px 10px 19px; display:block;line-height:17px;}
 .cont7 .name_padd{padding:0px 0px 10px 0px;}
 .name_padd{padding:10px 0px 10px 0px;}
@@ -672,7 +671,6 @@ margin-top:0px;
 .wrapper_pic_div img{position:absolute;margin:0px;}
 /* ************************************************************************************* */
 .class_table{margin:0px 0px 20px 0px;}
-.prods_padd{padding: 0px 16px 20px 18px;background:#fff;border: 1px solid #e5e5e5; border-width:0 1px 1px 1px;}
 .page_listing .prods_padd{width:auto;}
 .border_prods{padding:0px 0px 0px 0px; }
 #row-1 .border_prods{}

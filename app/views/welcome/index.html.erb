@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row menu-row">
   <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9">
     <%= render :partial => "welcome/home_carousel" %>
   </div>
@@ -10,7 +10,7 @@
 <div class="clear"></div>
 <div class="clear"></div>
 <div class="properties_list">
-  <div class="row">
+  <div class="row menu-row">
     <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9">
       <div class="properties-header">
         New Properties List
@@ -20,7 +20,7 @@
         <% if (index % 3 == 0) %>
           <div class="clear"></div>
           <div class="clear"></div>
-          <div class="row property-row" style="padding:0px 15px 0px 15px;">
+          <div class="row property-row" style="margin: 0px;">
         <% end %>
         <%= render :partial => "shared/property_summary" %>
         <% if (index % 3 == 2) %>
