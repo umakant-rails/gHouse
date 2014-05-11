@@ -3,7 +3,11 @@
     <%= render :partial => "welcome/home_carousel" %>
   </div>
   <div class="col-xm-3 col-sm-3 col-md-3 col-lg-3">
-    <%= render :partial => "shared/property_summary" %>
+    <div class="row">
+      <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12">
+        <%= render :partial => "shared/property_summary" %>
+      </div>
+    </div>
   </div>
 </div>
 <div class="clear"></div>
@@ -22,7 +26,9 @@
           <div class="clear"></div>
           <div class="row property-row" style="margin: 0px;">
         <% end %>
-        <%= render :partial => "shared/property_summary" %>
+        <div class="border_prods col-xs-4">
+          <%= render :partial => "shared/property_summary" %>
+        </div>
         <% if (index % 3 == 2) %>
          </div>
         <% end %>
@@ -35,7 +41,11 @@
       <div class="h-seperator"></div>
       <div class="clear"></div>
       <div class="clear"></div>
-      <%= render :partial => "shared/property_summary" %>
+      <div class="row">
+        <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12">
+          <%= render :partial => "shared/property_summary" %>
+        </div>
+      </div>
     </div>
   </div> 
 </div>
