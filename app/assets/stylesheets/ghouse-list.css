@@ -128,15 +128,14 @@ ul#sub_categories li.wrapper_prods .prods_padd{ margin:10px 0 10px 0; border:0px
 .infoBoxContents .desc_padd{padding:0px 0px 0px 0px;}
 .desc_padd.un{padding:12px 0px 8px 0px; margin-bottom:11px;}
 .listing_padd{padding:0px 0px 7px 0px; text-align:left;margin:0px 0px 5px -8px;}
-.price_padd{padding:5px 19px 2px 0px; overflow:hidden; color:#f93535; position:relative;}
+
 .price_padd.extra{}
 h2.price_padd{padding: 0px 0px 10px 0px; overflow:hidden;}
 .cont7{ padding-top:19px; padding-right:0; position: relative;}
-.cont7 .price_padd,
 .cont7 .price_padd.extra{ position:absolute; top:-40px;left:-19px; background: #f36d50; color: #fff; opacity: .85;}
 .cont7 .price del,
-.cont7 .price .productSpecialPrice{color:#fff; font-size:14px;}
-.cont7 .price_padd {padding:9px 22px 3px 22px;}
+
+
 .cont7 .price_padd.extra{padding:10px 22px 2px 22px;}
 
 .cont7 .button__padd{padding:4px 0px 2px 0px; float:none; }
@@ -235,7 +234,6 @@ h1 .productSpecialPrice{color:#30302f; font-weight:normal;}
 
 .un .cont7 .productSpecialPrice{}
 del{}
-.price b{font-size:1.165em;line-height:2em;float:left; color:#383838; display:none;}
 .price SPAN.productSpecialPrice{padding-right:4px; }
 .price del{display:inline-block; margin-top:0px; margin-left:0px;}
 div.price SPAN.productSpecialPric{ display:inline-block;}
@@ -265,13 +263,7 @@ h2.price del{ margin: 2px 0px 0px 0px;}
 .listing b,							 
 .listing strong				{}							 
 .listing b 						{}
-.listing em,
-.listing strong   				{color:#333;font-weight:normal;font-size:11px;padding:0px 0px 0px 0px;}
-.listing b strong   			{color:#333; padding:0px 0px 0px 0px;}
-.listing b strong a 			{text-decoration:underline;}
-.listing b strong a:hover   	{text-decoration:none}
-.listing strong a 				{color:#333; text-decoration:underline;}
-.listing strong a:hover   		{color:#333; text-decoration:none} 
+
 
 .row_listing_name .price_padd{}
 

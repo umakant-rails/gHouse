@@ -118,3 +118,15 @@
 .property-row{
   width: 100%;
 }
+
+.price_padd{padding:5px 19px 2px 0px; overflow:hidden; color:#f93535; position:relative;}
+.cont7 .price .productSpecialPrice{color:#fff; font-size:14px;}
+.cont7 .price_padd{ position:absolute; top:-35px; height: 35px; background: #f36d50; color: #fff; opacity: .85; margin-left: -20px;padding:8px;}
+.price b{font-size:1.165em;line-height:18px;float:left; color:#383838;}
+
+.listing em, .listing strong {color:#333;font-weight:normal;font-size:13px;padding:0px 0px 0px 0px;}
+.listing b strong  {color:#333; padding:0px 0px 0px 0px;}
+.listing b strong a {text-decoration:underline;}
+.listing b strong a:hover	{text-decoration:none}
+.listing strong a {color:#333; text-decoration:underline;}
+.listing strong a:hover	{color:#333; text-decoration:none} 
